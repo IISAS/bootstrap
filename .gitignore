@@ -41,4 +41,5 @@ docs/.jekyll-metadata
 bower_components
 node_modules
 /vendor/
-/dist/
+/dist/js/bootstrap.js
+/dist/js/bootstrap.min.js
