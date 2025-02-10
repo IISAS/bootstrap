@@ -22,6 +22,11 @@
   @media (min-width: @grid-float-breakpoint) {
     border-radius: @navbar-border-radius;
   }
+
+  @tw-ring-shadow: 0 0 #0000;
+  @tw-ring-offset-shadow: 0 0 #0000;
+  @tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1) !important;
+  box-shadow: @tw-ring-offset-shadow, @tw-ring-shadow, @tw-shadow !important;
 }
 
 
@@ -166,6 +171,7 @@
   padding: @navbar-padding-vertical @navbar-padding-horizontal;
   font-size: @font-size-large;
   line-height: @line-height-computed;
+  border-bottom: 0px;
 
   &:hover,
   &:focus {
