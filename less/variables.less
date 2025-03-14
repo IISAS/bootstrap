@@ -522,21 +522,21 @@
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-@state-success-text:             #3c763d;
-@state-success-bg:               #dff0d8;
-@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+@state-success-text:             @egi-color-feedback-success;
+@state-success-bg:               #ffffff;
+@state-success-border:           @state-success-text;
 
-@state-info-text:                #31708f;
-@state-info-bg:                  #d9edf7;
-@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+@state-info-text:                @egi-color-primary-blue;
+@state-info-bg:                  #ffffff;
+@state-info-border:              @state-info-text;
 
-@state-warning-text:             #8a6d3b;
-@state-warning-bg:               #fcf8e3;
-@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+@state-warning-text:             @egi-color-feedback-warning;
+@state-warning-bg:               #ffffff;
+@state-warning-border:           @state-warning-text;
 
-@state-danger-text:              #ffffff;
-@state-danger-bg:                @egi-color-feedback-error;
-@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+@state-danger-text:              @egi-color-feedback-error;
+@state-danger-bg:                #ffffff;
+@state-danger-border:            @state-danger-text;
 
 
 //== Tooltips
@@ -650,20 +650,20 @@
 @alert-border-radius:         @border-radius-base;
 @alert-link-font-weight:      bold;
 
-@alert-success-bg:            @state-success-bg;
-@alert-success-text:          @state-success-text;
+@alert-success-bg:            @state-success-text;
+@alert-success-text:          @state-success-bg;
 @alert-success-border:        @state-success-border;
 
-@alert-info-bg:               @state-info-bg;
-@alert-info-text:             @state-info-text;
+@alert-info-bg:               @state-info-text;
+@alert-info-text:             @state-info-bg;
 @alert-info-border:           @state-info-border;
 
-@alert-warning-bg:            @state-warning-bg;
-@alert-warning-text:          @state-warning-text;
+@alert-warning-bg:            @state-warning-text;
+@alert-warning-text:          @state-warning-bg;
 @alert-warning-border:        @state-warning-border;
 
-@alert-danger-bg:             @state-danger-bg;
-@alert-danger-text:           @state-danger-text;
+@alert-danger-bg:             @state-danger-text;
+@alert-danger-text:           @state-danger-bg;
 @alert-danger-border:         @state-danger-border;
 
 
