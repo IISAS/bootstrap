@@ -1100,9 +1100,10 @@ a {
   color: #EF8200;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  -webkit-transition: border-bottom 0.15s ease-in-out;
-  -o-transition: border-bottom 0.15s ease-in-out;
-  transition: border-bottom 0.15s ease-in-out;
+  background-color: transparent;
+  -webkit-transition: background-color 0.15s ease-in-out, border-bottom 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out, border-bottom 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-bottom 0.15s ease-in-out;
 }
 a:hover,
 a:focus {
@@ -3620,7 +3621,7 @@ tbody.collapse.in {
   display: none;
   float: left;
   min-width: 160px;
-  padding: 5px 0;
+  padding: 15px 0;
   margin: 2px 0 0;
   font-size: 14px;
   text-align: left;
@@ -3654,9 +3655,9 @@ tbody.collapse.in {
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
+  color: #fff;
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: #EF8200;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
