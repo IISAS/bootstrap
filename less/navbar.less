@@ -22,11 +22,6 @@
   @media (min-width: @grid-float-breakpoint) {
     border-radius: @navbar-border-radius;
   }
-
-  @tw-ring-shadow: 0 0 #0000;
-  @tw-ring-offset-shadow: 0 0 #0000;
-  @tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1) !important;
-  box-shadow: @tw-ring-offset-shadow, @tw-ring-shadow, @tw-shadow !important;
 }
 
 
@@ -251,7 +246,6 @@
       float: none;
       width: auto;
       margin-top: 0;
-      background-color: transparent;
       border: 0;
       box-shadow: none;
       > li > a,
@@ -400,7 +394,6 @@
 // Default navbar
 .navbar-default {
   background-color: @navbar-default-bg;
-  border-color: @navbar-default-border;
 
   .navbar-brand {
     color: @navbar-default-brand-color;
@@ -532,7 +525,6 @@
 
 .navbar-inverse {
   background-color: @navbar-inverse-bg;
-  border-color: @navbar-inverse-border;
 
   .navbar-brand {
     color: @navbar-inverse-brand-color;
@@ -592,30 +584,6 @@
         }
         .divider {
           background-color: @navbar-inverse-border;
-        }
-        > li > a {
-          color: @navbar-inverse-link-color;
-          &:hover,
-          &:focus {
-            color: @navbar-inverse-link-hover-color;
-            background-color: @navbar-inverse-link-hover-bg;
-          }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: @navbar-inverse-link-active-color;
-            background-color: @navbar-inverse-link-active-bg;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: @navbar-inverse-link-disabled-color;
-            background-color: @navbar-inverse-link-disabled-bg;
-          }
         }
       }
     }

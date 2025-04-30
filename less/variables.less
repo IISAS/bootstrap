@@ -45,7 +45,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               @egi-color-background-light-gray;
+@body-bg:               @egi-color-background-white;
 //** Global text color on `<body>`.
 @text-color:            @gray-base;
 
@@ -70,6 +70,10 @@
 @font-size-base:          14px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * .85)); // ~12px
+
+@font-size-btn-base:      16px;
+@font-size-btn-large:     18px;
+@font-size-btn-small:     14px;
 
 @font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
 @color-h1:                @egi-color-primary-blue;
@@ -169,6 +173,7 @@
 //## For each of Bootstrap's buttons, define text, background and border color.
 
 @btn-font-weight:                normal;
+@btn-font-size:                  16px;
 
 @btn-default-color:              #333;
 @btn-default-bg:                 #fff;
@@ -511,8 +516,9 @@
 //##
 
 @jumbotron-padding:              30px;
-@jumbotron-color:                inherit;
-@jumbotron-bg:                   @gray-lighter;
+@jumbotron-color:                @egi-color-primary-blue;
+@jumbotron-bg:                   @egi-color-background-white;
+@jumbotron-border-color:         @egi-color-background-border-gray;
 @jumbotron-heading-color:        inherit;
 @jumbotron-font-size:            ceil((@font-size-base * 1.5));
 @jumbotron-heading-font-size:    ceil((@font-size-base * 4.5));
